@@ -1,10 +1,10 @@
 function About() {
 
     return (
-        <div className="flex p-9">
-            <img src="/img-2.jpeg" className="w-1/2 object-cover" />
+        <div className="flex flex-col-reverse md:flex-row  p-9 ">
+          
             <div className="p-10">
-                Mi nombre es Minico Martina Lucia,
+                Mi nombre es Minico Martina Lucia, soy de Argentina,
                 empecé a estudiar tarot en el año 2014
                 y en el 2016 comencé los estudios de Astrología.
                 En el 2018 me inicié en Reiki, en el año 2019 en
@@ -20,6 +20,7 @@ function About() {
                 brindando un poco de cada experiencia
                 y en búsqueda de la síntesis de brindarle ayuda a cada persona que se acerca con lo que necesite.
             </div>
+            <img src="/img-2.jpeg" className="w-1/2 object-cover shadow-2xl shadow-zinc-500 mx-auto my-auto" />
 
         </div>
     )
