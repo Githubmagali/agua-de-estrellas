@@ -45,7 +45,7 @@ const items=[
 function Services() {
 
     return (
-        <div className="flex flex-col p-24 ">
+        <div className="fade-in flex flex-col p-24 ">
             <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-y-9">
                 {items.map((item, index)=>(<>
                     <img src={item.img} className="w-24 h-24 rounded-full object-cover"/>

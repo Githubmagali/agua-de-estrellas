@@ -16,9 +16,9 @@ function Navbar(){
                 <Link href="/about"
                 className={`hover:text-rose-950 ${pathname === "/about" ? ' text-rose-900' : ''}`}>About</Link>
                 <Link href="/services"
-                 className={`hover:text-rose-950 ${pathname === "/services" ? ' text-rose-900' : ''}`}>Services</Link>
+                 className={`hover:text-rose-950 ${pathname === "/services" ? ' text-rose-900' : ''}`}>Servicios</Link>
                 <Link href="/contact"
-                 className={`hover:text-rose-950 ${pathname === "/contact" ? ' text-rose-900' : ''}`}>Contact</Link>
+                 className={`hover:text-rose-950 ${pathname === "/contact" ? ' text-rose-900' : ''}`}>Contacto</Link>
               </div>
 
         </div>

@@ -18,7 +18,7 @@ function Contact(){
   
   
       if (fullName === '' || email === '' || message === '') {
-        setAlertMessage("Complete all fields");
+        setAlertMessage("Complete todos los campos");
         setIsAlertVisible(true);
   
   
@@ -41,13 +41,13 @@ function Contact(){
   
   
         if (res.ok) {
-          setAlertMessage("Message sent succesfully");
+          setAlertMessage("Message enviado con exito!");
         } else {
-          setAlertMessage("Error sending message");
+          setAlertMessage("Error al enviar el mensaje");
         }
       } catch (error) {
         console.error("Error sending email:", error);
-        setAlertMessage("Error sending message");
+        setAlertMessage("Error al enviar el mensaje");
       }
   
   
@@ -65,7 +65,7 @@ function Contact(){
 
     return(
         
-      <div className="flex  flex-col items-center justify-center sm:text-center px-9 " id="contact">
+      <div className="fade-in flex  flex-col items-center justify-center sm:text-center px-9 " id="contact">
       <p className="text-gray-800 md:text-3xl pt-20">Contactame</p>
       <form className="py-10">
         <input type="text" id="title" className="border p-2 mb-4 w-full rounded" placeholder="Nombre completo"

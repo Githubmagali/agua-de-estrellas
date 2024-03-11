@@ -16,3 +16,19 @@ body {
   font-weight: weight;
   font-style: normal;
 }
+
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

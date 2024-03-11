@@ -11,12 +11,12 @@ function CustomAlert ({ message, onClose, alertType }) {
           return () => clearTimeout(timeout);
         }, [onClose]);
       
-        const alertColor = alertType === "success" ? "bg-green-500" : "bg-red-500";
+        const alertColor = alertType === "success" ? "bg-green-500" : "bg-red-800";
       
       
       
         return (
-          <div className={`fixed bottom-0 right-0 mb-4 mr-4 ${alertColor} text-white p-4 rounded-md`}>
+          <div className={`fixed bottom-0 right-0 mb-4 mr-4 ${alertColor} text-white p-4 `}>
             {message}
           </div>
         );

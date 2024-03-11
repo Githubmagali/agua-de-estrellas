@@ -1,7 +1,7 @@
 function About() {
 
     return (
-        <div className="flex flex-col-reverse md:flex-row  p-9 ">
+        <div className="flex flex-col-reverse md:flex-row p-9 fade-in ">
           
             <div className="p-10">
                 Mi nombre es Minico Martina Lucia, soy de Argentina,
