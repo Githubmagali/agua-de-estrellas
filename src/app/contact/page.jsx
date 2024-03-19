@@ -20,7 +20,7 @@ function Contact(){
       if (fullName === '' || email === '' || message === '') {
         setAlertMessage("Complete todos los campos");
         setIsAlertVisible(true);
-  
+        setAlertType("error");
   
         return;
   
@@ -42,15 +42,18 @@ function Contact(){
   
         if (res.ok) {
           setAlertMessage("Message enviado con exito!");
+          setAlertType("success");
         } else {
           setAlertMessage("Error al enviar el mensaje");
+          setAlertType("error");
         }
       } catch (error) {
         console.error("Error sending email:", error);
         setAlertMessage("Error al enviar el mensaje");
+        setAlertType("error");
       }
   
-  
+      
   
       setFullName("");
       setEmail("");

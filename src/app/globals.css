@@ -32,3 +32,9 @@ body {
       opacity: 1;
   }
 }
+
+.fake-dark-mode {
+  color: #fff; 
+  background-color: #2a2828; 
+
+}

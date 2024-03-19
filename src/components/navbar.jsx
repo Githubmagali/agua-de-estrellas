@@ -2,9 +2,11 @@
 import Link from "next/link"
 import { usePathname } from 'next/navigation';
 
+
 function Navbar(){
 
     const pathname = usePathname();
+  
 
     return(
         <div className="flex flex-col items-center justify-center py-24 w-full shadow-2xl shadow-slate-100">
@@ -13,8 +15,8 @@ function Navbar(){
         
              
               <div className="flex pt-9 gap-9">
-                <Link href="/about"
-                className={`hover:text-rose-950 ${pathname === "/about" ? ' text-rose-900' : ''}`}>About</Link>
+                <Link href="/"
+                className={`hover:text-rose-950 ${pathname === "/" ? ' text-rose-900' : ''}`}>About</Link>
                 <Link href="/services"
                  className={`hover:text-rose-950 ${pathname === "/services" ? ' text-rose-900' : ''}`}>Servicios</Link>
                 <Link href="/contact"
