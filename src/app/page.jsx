@@ -1,7 +1,7 @@
 function About() {
     
     return (
-        <div className="flex  p-9 ">
+        <div className="flex p-9 fade-in">
              <img src="/img-10.jpeg" className="w-1/2 object-cover rounded rounded-xl mx-auto my-auto" />
           
             <div className="p-10 text-gray-500">
